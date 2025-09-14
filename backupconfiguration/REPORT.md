@@ -13,6 +13,7 @@ A secure directory was created to store all backups:
 ```bash
 sudo mkdir -p /backups
 sudo chmod 700 /backups
+```
 
 <img width="806" height="253" alt="image" src="https://github.com/user-attachments/assets/1ecdb8a3-2979-4332-8d89-2412d0b437d6" />
 <img width="753" height="159" alt="image" src="https://github.com/user-attachments/assets/68bafa65-8d5e-4ea8-9696-a6850c8586e8" />
