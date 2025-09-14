@@ -1,0 +1,60 @@
+===== System Monitoring Report: Sun Sep 14 03:38:05 PM IST 2025 =====
+
+--- CPU/Memory/Process Usage (htop equivalent) ---
+top - 15:38:05 up  2:17,  2 users,  load average: 0.08, 0.05, 0.01
+Tasks: 112 total,   1 running, 111 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1707.5 total,   1279.7 free,    329.6 used,    248.7 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   1377.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5219 root      20   0   10340   4168   3476 R   6.2   0.2   0:00.01 top
+      1 root      20   0  108380  16608  11164 S   0.0   0.9   0:02.93 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_g
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-sync_
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-slub_
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-netns
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-kblockd
+     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-mm_pe
+     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthre
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_
+     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace
+
+--- Disk Usage (df) ---
+Filesystem                Size  Used Avail Use% Mounted on
+devtmpfs                  4.0M     0  4.0M   0% /dev
+tmpfs                     854M     0  854M   0% /dev/shm
+tmpfs                     342M  7.9M  334M   3% /run
+/dev/mapper/cs_vbox-root   17G  1.8G   16G  11% /
+/dev/sda1                 960M  249M  712M  26% /boot
+tmpfs                     171M     0  171M   0% /run/user/0
+
+--- Directory Usage (du) ---
+12K	/home/mike
+12K	/home/Sarah
+
+--- Top 10 CPU-consuming Processes ---
+    PID    PPID CMD                         %MEM %CPU
+   4197       2 [kworker/0:1-events]         0.0  0.6
+      1       0 /usr/lib/systemd/systemd --  0.9  0.0
+      2       0 [kthreadd]                   0.0  0.0
+      3       2 [pool_workqueue_]            0.0  0.0
+      4       2 [kworker/R-rcu_g]            0.0  0.0
+      5       2 [kworker/R-sync_]            0.0  0.0
+      6       2 [kworker/R-slub_]            0.0  0.0
+      7       2 [kworker/R-netns]            0.0  0.0
+      9       2 [kworker/0:0H-kblockd]       0.0  0.0
+
+--- Top 10 Memory-consuming Processes ---
+    PID    PPID CMD                         %MEM %CPU
+    681       1 /usr/bin/python3 -s /usr/sb  2.3  0.0
+    736       1 /usr/sbin/NetworkManager --  1.1  0.0
+      1       0 /usr/lib/systemd/systemd --  0.9  0.0
+   2016       1 /usr/lib/systemd/systemd --  0.8  0.0
+   3155     755 sshd: root [priv]            0.7  0.0
+    589       1 /usr/lib/systemd/systemd-ud  0.7  0.0
+    750       1 /usr/sbin/httpd -DFOREGROUN  0.6  0.0
+    682       1 /usr/lib/systemd/systemd-lo  0.6  0.0
+    576       1 /usr/lib/systemd/systemd-jo  0.6  0.0
