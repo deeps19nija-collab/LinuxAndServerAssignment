@@ -128,6 +128,9 @@ sudo crontab -e
 
 Backups will run every Tuesday at 12:00 AM automatically.  
 
+
+```
+
 - [Nginx bakcup Log file](https://github.com/deeps19nija-collab/LinuxAndServerAssignment/blob/main/backupconfiguration/nginx_backup_log_2025-09-14.txt)
 - [Apache bakcup Log file](https://github.com/deeps19nija-collab/LinuxAndServerAssignment/blob/main/backupconfiguration/apache_backup_log_2025-09-14.txt)
 - [Report Template](https://github.com/deeps19nija-collab/LinuxAndServerAssignment/blob/main/backupconfiguration/REPORT.md)
