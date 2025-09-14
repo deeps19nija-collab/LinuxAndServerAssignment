@@ -63,3 +63,7 @@ Provide visibility for developers and support capacity planning.
   ✅ Fixed by creating directory with:
   ```bash
   mkdir -p /var/log/system_monitor
+ - **EPEL Repo required**: On centos
+   `htop`and `nmon`wern't available by default.  
+   ✅Fixed by installing the epel-release first
+   
