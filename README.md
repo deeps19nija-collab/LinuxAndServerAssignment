@@ -1,5 +1,5 @@
 
-# TASK 2 : System Monitoring Setup
+# TASK 1 : System Monitoring Setup
 
 ## Overview
 This repository contains a basic monitoring setup to track CPU, memory, disk usage, and resource-heavy processes.  
@@ -18,6 +18,14 @@ It helps developers and admins troubleshoot performance issues and plan for capa
    ```bash
    git clone https://github.com/<your-username>/system-monitoring.git
    cd system-monitoring
+2. Make the script executable:
+   ```bash
+   chmod +x system_monitor.sh
+   
+4. Run the script as root or with sudo:
+   ```bash
+   sudo ./system_monitor.sh
+   
 
 # TASK 2: User Management and Access Control Setup
 
@@ -37,5 +45,36 @@ Automate the creation of user accounts, secure their workspaces, and enforce pas
 ## Usage
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/deeps19nija-collab/LinuxAndServerAssignment.git
+
+2. Navigate to the project folder: 
+```bash
+cd UserManagement/
+
+3. Make the script executable:
+```bash
+chmod +x user_management.sh
+
+4. Run the script as root or with sudo:
+```bash
+sudo ./user_management.sh
+
+```
+## Password Complexity  
+
+**Ensure PAM enforces password rules (Debian/Ubuntu example):**  
+password requisite pam_pwquality.so retry=3 minlen=12 ucredit=-1 lcredit=-1 dcredit=-1 ocredit=-1  
+**This ensures passwords have at least 12 characters, including uppercase, lowercase, digit, and special character.**  
+
+## Logging
+**Operations are logged with timestamps in /var/log/user_management.log.**  
+
+- [Sample Log file](https://github.com/deeps19nija-collab/LinuxAndServerAssignment/blob/main/UserManagement/user_management.log)
+- [Report Template](https://github.com/deeps19nija-collab/LinuxAndServerAssignment/blob/main/UserManagement/USERMGMTREPORT.md)
+- [Script File](https://github.com/deeps19nija-collab/LinuxAndServerAssignment/blob/main/UserManagement/user_management.sh)
+
+
+
+
+
 
