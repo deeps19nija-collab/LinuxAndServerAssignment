@@ -64,7 +64,7 @@ Automate the creation of user accounts, secure their workspaces, and enforce pas
    ```bash
    chmod +x user_management.sh
 
-4. Run the script as root or with sudo:
+4. Run the script as root or with sudo:  
    ```bash
    sudo ./user_management.sh
 
@@ -80,6 +80,54 @@ password requisite pam_pwquality.so retry=3 minlen=12 ucredit=-1 lcredit=-1 dcre
 - [Sample Log file](https://github.com/deeps19nija-collab/LinuxAndServerAssignment/blob/main/UserManagement/user_management.log)
 - [Report Template](https://github.com/deeps19nija-collab/LinuxAndServerAssignment/blob/main/UserManagement/USERMGMTREPORT.md)
 - [Script File](https://github.com/deeps19nija-collab/LinuxAndServerAssignment/blob/main/UserManagement/user_management.sh)
+
+# TASK 3: Backup Configuration for Web Servers
+
+## Objective
+Automate backups for Sarah’s Apache server and Mike’s Nginx server to ensure data integrity and disaster recovery.
+
+## Features
+- Creates compressed backups of:
+  - Apache: `/etc/httpd/` and `/var/www/html/`
+  - Nginx: `/etc/nginx/` and `/usr/share/nginx/html/`
+- Stores backups in `/backups/` with filenames including date:
+  - `apache_backup_YYYY-MM-DD.tar.gz`
+  - `nginx_backup_YYYY-MM-DD.tar.gz`
+- Verifies backup integrity by logging contents into:
+  - `apache_backup_log_YYYY-MM-DD.txt`
+  - `nginx_backup_log_YYYY-MM-DD.txt`
+- Scheduled with cron to run every **Tuesday at 12:00 AM**
+
+## Usage
+Clone the repository:
+```bash
+git clone https://github.com/deeps19nija-collab/LinuxAndServerAssignment.git
+
+
+```bash
+cd backupConfig/
+
+```bash
+chmod +x backup_apache.sh backup_nginx.sh
+
+
+```bash
+sudo ./backup_apache.sh  
+sudo ./backup_nginx.sh
+
+
+```
+## Automation
+Add to root’s crontab:  
+```bash
+sudo crontab -e  
+
+```bash
+0 0 * * 2 /usr/local/bin/backup_apache.sh  
+0 0 * * 2 /usr/local/bin/backup_nginx.sh  
+
+Backups will run every Tuesday at 12:00 AM automatically.  
+
 
 
 
