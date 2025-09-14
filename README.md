@@ -25,6 +25,15 @@ It helps developers and admins troubleshoot performance issues and plan for capa
 4. Run the script as root or with sudo:
    ```bash
    sudo ./system_monitor.sh
+
+   ```
+### Files
+[Sample Log File](https://github.com/deeps19nija-collab/LinuxAndServerAssignment/blob/main/monitoring/system_report_2025-09-14_15-38.log)  
+
+[Script](https://github.com/deeps19nija-collab/LinuxAndServerAssignment/blob/main/monitoring/system_monitor.sh)  
+
+[REPORT.md](https://github.com/deeps19nija-collab/LinuxAndServerAssignment/blob/main/monitoring/REPORT.md)  
+
    
 
 # TASK 2: User Management and Access Control Setup
