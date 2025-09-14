@@ -44,22 +44,21 @@ Automate the creation of user accounts, secure their workspaces, and enforce pas
 
 ## Usage
 1. Clone the repository:
-```bash
-git clone https://github.com/deeps19nija-collab/LinuxAndServerAssignment.git
+   ```bash
+   git clone https://github.com/deeps19nija-collab/LinuxAndServerAssignment.git
 
 2. Navigate to the project folder: 
-```bash
-cd UserManagement/
+   ```bash
+   cd UserManagement/
 
 3. Make the script executable:
-```bash
-chmod +x user_management.sh
+   ```bash
+   chmod +x user_management.sh
 
 4. Run the script as root or with sudo:
-```bash
-sudo ./user_management.sh
+   ```bash
+   sudo ./user_management.sh
 
-```
 ## Password Complexity  
 
 **Ensure PAM enforces password rules (Debian/Ubuntu example):**  
