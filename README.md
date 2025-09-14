@@ -10,7 +10,8 @@ It helps developers and admins troubleshoot performance issues and plan for capa
 - Disk usage reporting
 - Top resource-consuming processes
 - Logs saved under `/var/log/system_monitor/`
-- Cron job support for automation
+- Automation Job support for monitoring.
+- Creted Report.md summarizing the implementation steps and terminal output screenshots.  
 
 ## Setup Instructions
 1. Clone this repository:
