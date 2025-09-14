@@ -50,9 +50,17 @@ Provide visibility for developers and support capacity planning.
      ```bash
      chmod +x system_monitor.sh
      ```
+   - Clone the repository and RUN the script `system_monitor.sh`
+     
+     ```bash
+     ./system_monitor.sh
+     ```
+     
+     <img width="1263" height="995" alt="image" src="https://github.com/user-attachments/assets/d60df2c8-f43f-4d17-bb54-1df14dd36059" />
+
 
 5. **GitHub integration**
-   - Pushed script, README, `.gitignore`, and screenshots to repo.
+   - Pushed script, README and screenshots to repo.
    - Added this `REPORT.md` to summarize setup.
 
 ---
