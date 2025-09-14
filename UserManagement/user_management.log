@@ -1,0 +1,13 @@
+2025-09-14 15:47:33 - ===== Starting User Management and Access Control Setup =====
+2025-09-14 15:47:33 - Created user Sarah with home directory /home/Sarah
+2025-09-14 15:47:33 - Set secure password for Sarah
+2025-09-14 15:47:33 - Password for Sarah will expire on first login.
+2025-09-14 15:47:33 - Workspace directory /home/Sarah/workspace created with restricted access
+2025-09-14 15:47:33 - Password expiration set to 30 days for Sarah
+2025-09-14 15:47:33 - Created user Mike with home directory /home/mike
+2025-09-14 15:47:33 - Set secure password for Mike
+2025-09-14 15:47:33 - Password for Mike will expire on first login.
+2025-09-14 15:47:33 - Workspace directory /home/mike/workspace created with restricted access
+2025-09-14 15:47:33 - Password expiration set to 30 days for Mike
+2025-09-14 15:47:33 - ===== User Management and Access Control Setup Completed =====
+2025-09-14 15:47:33 - Check /var/log/user_management.log for detailed logs.
